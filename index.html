@@ -2,13 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W8WBZ4JK');</script>
+<!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="robots" content="noindex,nofollow">
-<title>High Quality H2O · Water Softeners (sample page)</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Whole-home water softeners installed in Las Vegas and Henderson by a local, veteran-owned team. Call (702) 879-4440 for a free quote.">
+<title>Water Softeners in Las Vegas | High Quality H2O</title>
 <style>img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Figtree:wght@400;500;600;700&display=swap">
 </head>
 <body>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Figtree:wght@400;500;600;700&display=swap">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8WBZ4JK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <style>
 /* Layout: one column of full-width bands, each with one job, all leading to the same two actions
    (call, or the three-field quote form). Phone first. No menu, no exits. Single light look by choice:
@@ -221,6 +233,24 @@ footer .wrap{padding-block:18px}
   .btn{transition:background .18s ease,transform .18s ease,border-color .18s ease}
   .btn:active{transform:scale(.98)}
 }
+
+/* live form states */
+.sent.err{background:#fdecea;border-color:#f0b4ab;color:#7a1f12}
+.quote .btn[disabled]{opacity:.65;cursor:progress}
+.quote .fine{color:#475873}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+/* filtration page */
+.gain article img.product{object-fit:contain;background:#fff;border:1px solid var(--line)}
+.ba-photo{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r);display:block}
+.calc{margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px 20px}
+.calc label{font-size:1rem;color:var(--navy);font-weight:700;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.calc output{font-family:var(--display);font-weight:900;font-size:1.9rem;line-height:1;color:var(--cta);font-variant-numeric:tabular-nums}
+.calc input[type=range]{width:100%;height:44px;margin:6px 0 0;accent-color:var(--cta);cursor:pointer}
+.calc .ends{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted)}
+.calc-out{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:16px;margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
+.calc-out div{display:grid;gap:2px}
+.calc-out b{font-family:var(--display);font-weight:900;font-size:clamp(1.7rem,7vw,2.4rem);line-height:1;color:var(--navy);font-variant-numeric:tabular-nums}
+.calc-out span{font-size:.86rem;color:var(--muted)}
 </style>
 
 
@@ -385,22 +415,23 @@ footer .wrap{padding-block:18px}
         <a class="btn btn-call" href="tel:+17028794440"><span>Call <span class="num">(702) 879-4440</span></span></a>
       </div>
     </div>
-    <form class="quote" id="quote-form" novalidate>
+    <form class="quote" id="quote-form" data-service="Water softener" novalidate>
       <h2>Get my free quote</h2>
       <p class="small">Three fields. No obligation.</p>
       <div class="fields">
-        <label for="q-name">Your name<input id="q-name" type="text" autocomplete="name" placeholder="First and last name"></label>
-        <label for="q-phone">Phone number<input id="q-phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(702) 555-0123"></label>
-        <label for="q-zip">ZIP code<input id="q-zip" type="text" autocomplete="postal-code" inputmode="numeric" maxlength="5" placeholder="89101"></label>
+        <label for="q-name">Your name<input id="q-name" name="name" type="text" autocomplete="name" placeholder="First and last name"></label>
+        <label for="q-phone">Phone number<input id="q-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(702) 555-0123"></label>
+        <label for="q-zip">ZIP code<input id="q-zip" name="zip" type="text" autocomplete="postal-code" inputmode="numeric" maxlength="5" placeholder="89101"></label>
+        <div class="hp" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
         <button class="btn btn-call" type="submit">Request my free quote</button>
       </div>
       <p class="fine">We only use your number to call you about your quote.</p>
-      <div class="sent" id="sent" hidden>This is a mock-up, so nothing was sent. On the live page this would go straight to Brian's phone and inbox.</div>
+      <div class="sent" id="sent" role="status" hidden></div>
     </form>
   </div>
 </section>
 
-<footer><div class="wrap">High Quality H2O · Las Vegas, Nevada · (702) 879-4440 · Prepared by Noble Rock Integrations</div></footer>
+<footer><div class="wrap">High Quality H2O · Las Vegas, Nevada · (702) 879-4440</div></footer>
 
 <div class="dock">
   <a class="btn btn-call" href="tel:+17028794440">Call now</a>
@@ -409,10 +440,54 @@ footer .wrap{padding-block:18px}
 
 <script>
 (function(){
+  window.dataLayer=window.dataLayer||[];
   var s=document.getElementById('slider'),r=document.getElementById('ba-range');
   if(s&&r){r.addEventListener('input',function(){s.style.setProperty('--pos',r.value+'%')});}
+
+  var c=document.getElementById('cases');
+  if(c){
+    var fmt=function(n){return n.toLocaleString('en-US')};
+    var upd=function(){
+      var n=+c.value,cases=n*52;
+      document.getElementById('cases-out').textContent=n;
+      document.getElementById('c-bottles').textContent=fmt(cases*24);
+      document.getElementById('c-cost').textContent='$'+fmt(cases*6);
+      document.getElementById('c-lbs').textContent=fmt(cases*27);
+    };
+    c.addEventListener('input',upd);upd();
+  }
+
+  [].forEach.call(document.querySelectorAll('a[href^="tel:"]'),function(a){
+    a.addEventListener('click',function(){window.dataLayer.push({event:'phone_click'});});
+  });
+
   var f=document.getElementById('quote-form'),m=document.getElementById('sent');
-  if(f){f.addEventListener('submit',function(e){e.preventDefault();m.hidden=false;});}
+  if(!f)return;
+  var btn=f.querySelector('button[type=submit]'),label=btn.textContent;
+  var say=function(text,bad){m.textContent=text;m.className=bad?'sent err':'sent';m.hidden=false;};
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=f.elements['name'].value.trim(),phone=f.elements['phone'].value.trim(),zip=f.elements['zip'].value.trim();
+    if(f.elements['_honey'].value)return;
+    if(!name){say('Please add your name so we know who to ask for.',true);f.elements['name'].focus();return;}
+    if(phone.replace(/\D/g,'').length<10){say('Please enter a 10-digit phone number so we can call you back.',true);f.elements['phone'].focus();return;}
+    btn.disabled=true;btn.textContent='Sending…';
+    var to=['brian','myhighqualityh2o.com'].join('@'),cc=['Joe','lvrestoration.com'].join('@');
+    var service=f.getAttribute('data-service');
+    fetch('https://formsubmit.co/ajax/'+to,{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({Name:name,Phone:phone,'ZIP code':zip,'Asked about':service,Page:location.href,
+        _subject:'New quote request: '+service+' ('+name+')',_cc:cc,_template:'table',_captcha:'false'})
+    }).then(function(res){return res.json();}).then(function(d){
+      if(String(d.success)!=='true')throw new Error(d.message||'not sent');
+      f.reset();
+      say('Thank you, '+name.split(' ')[0]+'. We have your request and will call you shortly.');
+      window.dataLayer.push({event:'quote_form_submit',service:service});
+    }).catch(function(){
+      say('Sorry, that did not go through. Please call us at (702) 879-4440 and we will take care of you.',true);
+    }).then(function(){btn.disabled=false;btn.textContent=label;});
+  });
 })();
 </script>
 
