@@ -17,7 +17,8 @@ gtag('js',new Date());gtag('config','AW-16812215389');</script>
 <meta name="robots" content="noindex">
 <meta name="description" content="Whole-home water softeners installed in Las Vegas and Henderson by a local, veteran-owned team. Call (702) 879-4440 for a free quote.">
 <title>Water Softeners in Las Vegas | High Quality H2O</title>
-<style>img{max-width:100%}[hidden]{display:none!important}</style>
+<style>img{max-width:100%}[hidden]{display:none!important}.top-site{color:#fff;opacity:.85;font-size:.82rem;font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}.top-site:hover,.top-site:focus-visible{opacity:1}.see-more{margin:12px 0 0;font-size:.92rem;opacity:.9}.see-more a{color:inherit;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+</style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Figtree:wght@400;500;600;700&display=swap">
 </head>
 <body>
@@ -263,6 +264,7 @@ footer .wrap{padding-block:18px}
     <div class="brand">HIGH QUALITY <b>H2O</b></div>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="g-logo" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></symbol></svg>
     <div class="rating" role="img" aria-label="Rated 5.0 out of 5 on Google"><svg class="g" aria-hidden="true"><use href="#g-logo"/></svg><b>5.0</b><span class="stars" aria-hidden="true">★★★★★</span></div>
+    <a class="top-site" href="https://www.myhighqualityh2o.com/" target="_blank" rel="noopener" data-site-link="header">Full website</a>
     <a class="top-call" href="tel:+17028794440">(702) 879-4440</a>
   </div>
 </header>
@@ -278,6 +280,7 @@ footer .wrap{padding-block:18px}
         <a class="btn btn-call" href="tel:+17028794440"><span>Call (702) 879-4440<small>Talk to a real person today</small></span></a>
         <a class="btn btn-ghost" href="#quote">Get my free quote</a>
       </div>
+      <p class="see-more">Want to see more first? <a href="https://www.myhighqualityh2o.com/" target="_blank" rel="noopener" data-site-link="hero">Visit our full website</a></p>
       <ul class="ticks">
         <li>Free consultation, no pressure</li>
         <li>Licensed installers, made-in-USA systems</li>
@@ -461,6 +464,9 @@ footer .wrap{padding-block:18px}
     c.addEventListener('input',upd);upd();
   }
 
+  [].forEach.call(document.querySelectorAll('a[data-site-link]'),function(a){
+    a.addEventListener('click',function(){window.dataLayer.push({event:'site_link_click',link_location:a.getAttribute('data-site-link')});gtag('event','conversion',{send_to:'AW-16812215389/UzmvCJnh57kdEN2Y2NA-'});});
+  });
   [].forEach.call(document.querySelectorAll('a[href^="tel:"]'),function(a){
     a.addEventListener('click',function(){window.dataLayer.push({event:'phone_click'});gtag('event','conversion',{send_to:'AW-16812215389/LlG4CMfs0bYdEN2Y2NA-',value:1.0,currency:'USD'});});
   });
