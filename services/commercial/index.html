@@ -56,7 +56,7 @@ body{padding-bottom:72px}
     if(!first){say('Please add your name so we know who to ask for.',true);f.elements['Contact_FName'].focus();return;}
     if(phone.replace(/\D/g,'').length<10){say('Please enter a 10-digit phone number so we can call you back.',true);f.elements['Contact_Phone'].focus();return;}
     btn.disabled=true;btn.value='SENDING...';
-    var to=['brian','myhighqualityh2o.com'].join('@'),cc=['Joe','lvrestoration.com'].join('@');
+    var to=['brian','myhighqualityh2o.com'].join('@'),cc=['Joe','lvrestoration.com'].join('@')+','+['gflood2014','gmail.com'].join('@');
     var name=(first+' '+v('Contact_LName')).trim();
     fetch('https://formsubmit.co/ajax/'+to,{
       method:'POST',
