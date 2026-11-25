@@ -109,7 +109,7 @@ window.addEventListener("DOMContentLoaded", () => {
 (function(){
   window.dataLayer=window.dataLayer||[];
   [].forEach.call(document.querySelectorAll('a[href^="tel:"]'),function(a){
-    a.addEventListener('click',function(){window.dataLayer.push({event:'phone_click'});gtag('event','conversion',{send_to:'AW-16812215389/LlG4CMfs0bYdEN2Y2NA-',value:1.0,currency:'USD'});});
+    a.addEventListener('click',function(){window.dataLayer.push({event:'phone_click'});gtag('event','conversion',{send_to:'AW-16812215389/LlG4CMfs0bYdEN2Y2NA-',value:1.0,currency:'USD'});gtag('event','phone_tap');});
   });
   var f=document.getElementById('quote'),m=document.getElementById('hq-sent');
   if(!f||!m)return;
@@ -135,7 +135,7 @@ window.addEventListener("DOMContentLoaded", () => {
       f.reset();
       say('Thank you, '+first+'. We have your request and will call you shortly.');
       window.dataLayer.push({event:'quote_form_submit',service:'Website contact form'});
-      gtag('event','conversion',{send_to:'AW-16812215389/F8LWCMTs0bYdEN2Y2NA-',value:1.0,currency:'USD'});
+      gtag('event','conversion',{send_to:'AW-16812215389/F8LWCMTs0bYdEN2Y2NA-',value:1.0,currency:'USD'});gtag('event','generate_lead');
     }).catch(function(){
       say('Sorry, that did not go through. Please call us at (702) 879-4440 and we will take care of you.',true);
     }).then(function(){btn.disabled=false;btn.value=label;});
